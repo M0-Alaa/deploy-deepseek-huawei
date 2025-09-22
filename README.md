@@ -141,5 +141,5 @@ docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-
 
 ---
 
-## Repo for the Project
+## Live_Demo for the Project
 - https://youtu.be/khlOO3TlFUQ?si=-tSSCm2gP07FFK_3
