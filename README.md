@@ -1,5 +1,5 @@
-# deploy-deepseek-huawei
-Deploy DeepSeek on Huawei Cloud using Docker and Open WebUI
+# deploy-deepseek-huaweiCloud
+Deploy DeepSeek on Huawei Cloud using Ollama and deploy Open WebUI
 # Deploy DeepSeek on Huawei Cloud with Docker & Open WebUI
 
 This guide explains how to deploy [DeepSeek](https://ollama.com/library/deepseek) on Huawei Cloud using an ECS instance, Docker, and Open WebUI.
@@ -29,7 +29,7 @@ This guide explains how to deploy [DeepSeek](https://ollama.com/library/deepseek
    - **Billing Mode**: Pay per use
    - **OS**: Ubuntu Server 22.04
    - **EIP**: Automatic assignment
-   - **System Disk**: High I/O, 200 GiB
+   - **System Disk**: Ultra High I/O, 200 GiB
 4. Submit and create the ECS instance.
 
 ---
@@ -116,9 +116,8 @@ If it’s not running:
 ---
 
 ## Step 8: Set Up Open WebUI
-```docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway \
--v open-webui:/app/backend/data --name open-webui --restart always \
-ghcr.io/open-webui/open-webui:main
+```
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main 
 ```
 
 ---
@@ -139,3 +138,8 @@ ghcr.io/open-webui/open-webui:main
 ## Step 10: Start Chatting 🎉
 
 - You can now chat with DeepSeek using the Open WebUI interface.
+
+---
+
+## Repo for the Project
+- https://youtu.be/khlOO3TlFUQ?si=-tSSCm2gP07FFK_3
